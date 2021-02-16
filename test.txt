@@ -1,0 +1,36 @@
+/*
+ * @Descripttion: 
+ * @version: 1.0
+ * @Author: yuhui
+ * @Date: 2020-06-05 20:36:02
+ * @LastEditors: yuhui
+ * @LastEditTime: 2020-06-05 20:38:41
+ */ 
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual thatto use near 'into blogs (title,picurl,introduction,createtime,context,musicurl)
+0|www  |             ' at line 1                                                           rotocol\sequences\Sequence.js:47:14)
+0|www  |     at Query.Sequence._packetToError (C:\simple_Blog_node\node_modules\mysql\lib\p0|www  |     at Query.ErrorPacket (C:\simple_Blog_node\node_modules\mysql\lib\protocol\sequ0|www  |     at Protocol._parsePacket (C:\simple_Blog_node\node_modules\mysql\lib\protocol\0|www  |     at Parser._parsePacket (C:\simple_Blog_node\node_modules\mysql\lib\protocol\Pa0|www  |     at Parser.write (C:\simple_Blog_node\node_modules\mysql\lib\protocol\Parser.js:43:10)
+0|www  |     at Protocol.write (C:\simple_Blog_node\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+0|www  |     at Socket.<anonymous> (C:\simple_Blog_node\node_modules\mysql\lib\Connection.js:91:28)
+0|www  |     at Socket.<anonymous> (C:\simple_Blog_node\node_modules\mysql\lib\Connection.js:525:10)
+0|www  |     at Socket.emit (events.js:315:20)
+0|www  |     at addChunk (_stream_readable.js:295:12)
+0|www  |     --------------------
+0|www  |     at Protocol._enqueue (C:\simple_Blog_node\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+0|www  |     at Connection.query (C:\simple_Blog_node\node_modules\mysql\lib\Connection.js:201:25)
+0|www  |     at C:\simple_Blog_node\src\db\mysql.js:38:9
+0|www  |     at new Promise (<anonymous>)
+0|www  |     at exec (C:\simple_Blog_node\src\db\mysql.js:37:19)
+0|www  |     at uploadBlog (C:\simple_Blog_node\src\controller\blog.js:25:10)
+0|www  |     at blogRouter (C:\simple_Blog_node\src\router\blog.js:65:28)
+0|www  |     at C:\simple_Blog_node\app.js:66:22
+0|www  |     at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+0|www  |   code: 'ER_PARSE_ERROR',
+0|www  |   errno: 1064,
+0|www  |   sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right 
+            syntax to use near 'into blogs (title,picurl,introduction,createtime,context,musicurl) \n" +
+0|www  |     "            ' at line 1",
+0|www  |   sqlState: '42000',
+0|www  |   index: 0,
+0|www  |   sql: ' into blogs (title,picurl,introduction,createtime,context,musicurl) \n' +
+0|www  |     "              value ('测试111','','测试1啊',1591360263077,'<p>测试傻缺撒</p>','')"
+0|www  | }

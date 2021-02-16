@@ -1,0 +1,24 @@
+{
+  "name": "simple_blog_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/www.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www.js",
+    "prd": "cross-env NODE_ENV=production nodemon ./bin/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "fs-extra": "^8.1.0",
+    "mysql": "^2.17.1",
+    "pm2": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2"
+  }
+}
